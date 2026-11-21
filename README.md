@@ -46,6 +46,8 @@ HomeDash has two parts:
 
 You install **one host**, then as many **controller apps** as you like. The dashboard is also reachable from any modern browser.
 
+📖 **New to HomeDash?** Read the full [User Guide](userguide.md).
+
 ## Installation
 
 ### Step 1: Install the HomeDash Host
@@ -59,7 +61,7 @@ Pick whichever fits your setup. Each option has its own step-by-step guide.
 
 Once the host is running, open it in your browser and sign in with the admin account.
 
-> **First login:** change the default admin password immediately under **Settings → General → Account**.
+> **First login:** sign in with the admin password you set during installation. You can change it any time under **Settings → General → Account**.
 
 <p align="center">
   <img src="screenshots/homedash.login.png" alt="HomeDash login screen" width="60%" />

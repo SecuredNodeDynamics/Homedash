@@ -54,8 +54,8 @@ Pick whichever fits your setup. Each option has its own step-by-step guide.
 
 | Option | Best for | Installer |
 |---|---|---|
-| **Proxmox (LXC container)** | Proxmox users. Runs the host in its own LXC container and enables the host-level features (system updates, cleanup tool) out of the box. | [`homedash-pve-install.sh`](installers/proxmox/homedash-pve-install.sh) <!-- TODO: confirm folder --> |
-| **Existing Docker host** | Anyone already running Docker, or without Proxmox. Runs HomeDash alongside your other containers. | [Docker install guide](installers/docker/homedash-docker-install.md) <!-- TODO: confirm folder --> |
+| **Proxmox (LXC container)** | Proxmox users. Runs the host in its own LXC container and enables the host-level features (system updates, cleanup tool) out of the box. | [`homedash-pve-install.sh`](HomeDash%20installers/Proxmox/homedash-pve-install.sh) |
+| **Existing Docker host** | Anyone already running Docker, or without Proxmox. Runs HomeDash alongside your other containers. | [Docker install guide](HomeDash%20installers/Docker/homedash-docker-install.md) |
 
 For Proxmox, run the script as root on your Proxmox node:
 
@@ -143,7 +143,7 @@ Widgets are installed and updated through the built-in **Widget Manager**. Curre
 
 ## Updating
 
-- **Host:** from **Settings → System**, upload a `.hdupdate` package and watch the log stream live. Proxmox users can alternatively re-run the update bundle against the existing LXC (see the [Proxmox installer](installers/proxmox/homedash-pve-install.sh)).
+- **Host:** from **Settings → System**, upload a `.hdupdate` package and watch the log stream live. Proxmox users can alternatively re-run the update bundle against the existing LXC (see the [Proxmox installer](HomeDash%20installers/Proxmox/homedash-pve-install.sh)).
 - **Widgets:** from **Settings → Widget Manager**, click **Install** on any widget with a newer version. Updated `.hdwidget` packages are published on this GitHub repo as they become available. See [Installing Widgets](#installing-widgets).
 - **Controller apps:** download the newer installer from [Releases](../../releases) and install over the top.
 

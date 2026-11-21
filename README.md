@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/dashboard.png" alt="HomeDash dashboard" width="100%" />
+  <img src="screenshots/homedash1.png" alt="HomeDash dashboard" width="100%" />
 </p>
 
 ---
@@ -67,6 +67,10 @@ Once the host is running, open it in your browser and sign in with the admin acc
 
 > **First login:** change the default admin password immediately under **Settings → General → Account**.
 
+<p align="center">
+  <img src="screenshots/homedash.login.png" alt="HomeDash login screen" width="60%" />
+</p>
+
 ### Step 2: Install a Controller app (optional)
 
 Download the controller for your device from the [Releases](../../releases) page.
@@ -94,6 +98,10 @@ New and updated widgets are published as `.hdwidget` packages on this GitHub rep
 
 > Only the **Admin** account can install widgets, and widgets in sensitive categories (Security, Credentials, Networking) are admin-only by default.
 
+<p align="center">
+  <img src="screenshots/homedash.settings.widgetmanager.png" alt="HomeDash Widget Manager" width="100%" />
+</p>
+
 ## Features
 
 ### Dashboard
@@ -103,6 +111,10 @@ New and updated widgets are published as `.hdwidget` packages on this GitHub rep
 - **Global search** popup and a **bookmarks** widget for your quick links
 - **Themes and backgrounds** with a glass-morphism design system
 - **Custom branding.** Set the app name, logo and favicon from the UI.
+
+<p align="center">
+  <img src="screenshots/homedash.editlayout.png" alt="HomeDash Edit Layout mode" width="100%" />
+</p>
 
 ### Widgets
 Widgets are installed and updated through the built-in **Widget Manager**. Current widgets include:
@@ -126,7 +138,7 @@ Widgets are installed and updated through the built-in **Widget Manager**. Curre
 - **Cloudflare tunnel awareness:** optionally redirect local-IP visits to your configured tunnel
 
 <p align="center">
-  <img src="docs/screenshots/settings.png" alt="HomeDash settings and access control" width="100%" />
+  <img src="screenshots/homedash.settings.general.png" alt="HomeDash settings: general, branding and access control" width="100%" />
 </p>
 
 ## Updating

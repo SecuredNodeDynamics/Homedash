@@ -480,7 +480,7 @@ Download the newer installer from Releases and install it over the top. Your set
 | **Disk is filling up** | Run **Cleanup** (Settings → Admin) and consider scheduling it weekly. |
 | **Something broke after an update** | Restore from the backup you took before updating, then report the issue on GitHub. |
 
-Still stuck? [Open an issue](https://github.com/SecuredNodeDynamics/Homedash/issues) and include your HomeDash version, which host type you use (Proxmox or Docker), and the relevant log output.
+Still stuck? Ask in **#support** on the [HomeDash Discord](https://discord.gg/<invite-code>) <!-- TODO: invite link -->, or [open an issue](https://github.com/SecuredNodeDynamics/Homedash/issues) and include your HomeDash version, which host type you use (Proxmox or Docker), and the relevant log output.
 
 ---
 

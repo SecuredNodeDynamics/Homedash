@@ -17,8 +17,7 @@
   <img alt="Linux" src="https://img.shields.io/badge/Ubuntu-.deb-e95420?logo=ubuntu&logoColor=white" />
   <img alt="Android" src="https://img.shields.io/badge/Android-.apk-3ddc84?logo=android&logoColor=white" />
   <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-green" />
-  <!-- TODO: replace <invite-code> with your permanent Discord invite code -->
-  <a href="https://discord.gg/<invite-code>"><img alt="Join the Discord" src="https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?logo=discord&logoColor=white" /></a>
+    <a href="https://discord.gg/7xp7ZZu7f"><img alt="Join the Discord" src="https://img.shields.io/badge/Discord-Join%20the%20community-5865F2?logo=discord&logoColor=white" /></a>
 </p>
 
 <p align="center">
@@ -172,7 +171,7 @@ Widgets are self-contained `.hdwidget` packages. Each one bundles:
 
 ## Community
 
-Questions, ideas or a dashboard to show off? Join the **[HomeDash Discord](https://discord.gg/<invite-code>)** <!-- TODO: same invite link -->
+Questions, ideas or a dashboard to show off? Join the **[HomeDash Discord](https://discord.gg/7xp7ZZu7f)**
 
 - **#support** for help with installing or using HomeDash
 - **#showcase** to share your setup

@@ -67,6 +67,10 @@ A fresh dashboard starts with **Clock, Weather, Notes, Todo, Grocery List and Bo
 2. Go back to the dashboard and enter **Edit Layout** mode to drag and resize your widgets.
 3. Save when you're happy with it.
 
+> **Each device type has its own layout.** You can customize the dashboard separately for **desktop, laptop, tablet and phone**. On a tablet or phone you can set up both the **landscape** and **portrait** layouts. HomeDash switches to the layout you configured automatically, depending on the device and how it is held.
+>
+> You can also **lock the layout**, **lock widget sizes**, and **show or hide** individual widgets. See [Customizing Your Layout](#6-customizing-your-layout).
+
 ### Step 5: Make it yours (optional)
 
 - **Settings → General:** set the application name, logo and favicon.
@@ -304,19 +308,39 @@ Use the layout editing control on the dashboard header (available to accounts wi
 
 - **Move** a card by dragging it to a new position.
 - **Resize** a card by dragging its edge or corner. Cards can be narrower than the full page, so you can place several side by side.
-- **Save** your changes when you are done. Your layout is stored on the host, so it follows you across devices of the same size.
+- **Save** your changes when you are done. Your layouts are stored on the host, so they follow you across devices of the same type.
 
-### Layouts per screen size
+### Layouts per device type
 
-HomeDash keeps a **separate layout for each screen size** (desktop, tablet, phone). Arranging the dashboard on a large monitor does not rearrange it on your phone. To change a layout, view the dashboard at that screen size and edit it there.
+HomeDash keeps a **separate layout for each device type**:
 
-### Hiding widgets on specific devices
+| Device | Layouts you can customize |
+|---|---|
+| **Desktop** | One layout |
+| **Laptop** | One layout |
+| **Tablet** | **Landscape** and **portrait** |
+| **Phone** | **Landscape** and **portrait** |
 
-Any widget can be hidden on the device you are editing, which is useful for keeping a phone view compact.
+HomeDash **switches automatically** to the layout you set for the device you are using. On a tablet or phone it also follows the orientation, so rotating the device loads the landscape or portrait layout. Arranging the dashboard on a large monitor never rearranges it on your phone.
 
-- Toggle **hidden** on a card in Edit Layout mode.
+To change a layout, view the dashboard on that device type (and in that orientation, for tablets and phones) and edit it there.
+
+### Locking your layout and widget sizes
+
+Once you are happy with an arrangement, you can protect it:
+
+- **Lock the layout** to stop cards from being moved by accident.
+- **Lock widget sizes** to stop cards from being resized, while still allowing other changes.
+
+Unlock either one whenever you want to make changes.
+
+### Showing and hiding widgets
+
+Any widget can be shown or hidden on the device layout you are editing, which is useful for keeping a phone view compact.
+
+- **Hide** a card in Edit Layout mode, and **show** it again whenever you want.
 - Hidden cards **automatically move below all visible cards**, so hiding a widget never leaves a gap in your layout.
-- The widget is not deleted, and remains visible on other screen sizes.
+- The widget is not deleted, and stays visible on other device layouts unless you hide it there too.
 
 ### Tips
 

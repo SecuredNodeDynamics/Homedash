@@ -78,7 +78,11 @@ Download the controller for your device from the [Releases](../../releases) page
 | **Linux (Ubuntu)** | `.deb` package | Install with `sudo apt install ./HomeDash-Controller-<version>-amd64.deb` |
 | **Android** | `.apk` | Enable "install unknown apps" for your browser or file manager, then open the file |
 
-On first launch, enter your HomeDash host address and sign in.
+On first launch, enter your HomeDash host address on the connect to server page and sign in.
+
+<p align="center">
+  <img src="screenshots/homedash.controller.png" alt="HomeDash controller app: connect to server page" width="60%" />
+</p>
 
 ## Installing Widgets
 

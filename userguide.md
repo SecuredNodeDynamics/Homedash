@@ -550,9 +550,13 @@ Controller apps give you HomeDash as a dedicated app on your devices, with no br
 1. Download the package for your device from the [Releases](https://github.com/SecuredNodeDynamics/Homedash/releases) page.
 2. Install it.
    - **Windows:** run the installer.
-   - **Ubuntu:** `sudo apt install ./<package-name>.deb`
+   - **Ubuntu:** `sudo apt install ./HomeDash-Controller-<version>-amd64.deb`
    - **Android:** open the `.apk`. You may need to allow installs from your browser or file manager.
-3. Launch the app, enter your HomeDash host address, and sign in.
+3. Launch the app, enter your HomeDash host address on the **connect to server** page, and sign in.
+
+<p align="center">
+  <img src="screenshots/homedash.controller.png" alt="HomeDash controller app: connect to server page" width="60%" />
+</p>
 
 ### Updating a controller app
 Download the newer installer from Releases and install it over the top. Your settings and layouts live on the host, so nothing is lost.

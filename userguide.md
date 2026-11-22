@@ -12,6 +12,8 @@
 
 ## Table of Contents
 
+**[Quick Start](#quick-start)** (set up in about 15 minutes)
+
 1. [Introduction](#1-introduction)
 2. [Getting Started](#2-getting-started)
 3. [Finding Your Way Around](#3-finding-your-way-around)
@@ -26,6 +28,68 @@
 12. [Security Best Practices](#12-security-best-practices)
 13. [Troubleshooting](#13-troubleshooting)
 14. [Glossary](#14-glossary)
+
+---
+
+## Quick Start
+
+New to HomeDash? This is the shortest path from nothing to a working dashboard. Each step links to the full details.
+
+### Step 1: Install the Host
+
+The Host is the HomeDash server. Pick one:
+
+| If you have... | Use | Time |
+|---|---|---|
+| A **Proxmox** server | [Proxmox install guide](HomeDash%20installers/Proxmox/PVE-INSTALL-README.md). It creates the container, installs Docker and builds HomeDash for you. | About 10 minutes |
+| A Linux server with **Docker** | [Docker install guide](HomeDash%20installers/Docker/homedash-docker-install.md) | About 10 minutes |
+
+Both builds compile HomeDash on first run, so the first install takes a few minutes.
+
+### Step 2: Create your admin account
+
+- **Proxmox:** the installer asks for your admin username and password during setup.
+- **Docker:** open `http://SERVER_IP:3080/setup` and choose your admin username and password.
+
+There is no preset password. After that, open `http://SERVER_IP:3080` (use your container's IP for Proxmox) and sign in.
+
+### Step 3: Install your widgets
+
+A fresh dashboard starts with **Clock, Weather, Notes, Todo, Grocery List and Bookmarks**. To add more:
+
+1. Open **Settings → Widget Manager**.
+2. Click **Install** on each widget you want and wait for the log to finish.
+3. Open **Settings → Widgets**, enable each widget, and enter its URL and API key or login.
+
+### Step 4: Arrange your dashboard
+
+1. Open **Settings → Tabs** to create the pages you want, such as *Network* and *Media*.
+2. Go back to the dashboard and enter **Edit Layout** mode to drag and resize your widgets.
+3. Save when you're happy with it.
+
+### Step 5: Make it yours (optional)
+
+- **Settings → General:** set the application name, logo and favicon.
+- **Settings → Appearance:** choose a theme and background.
+- **Settings → BookMarks:** add the quick-link icons in the header. The icon picker comes with a library of 3,942 icons.
+
+### Step 6: Get the controller app (optional)
+
+Download the app for your device from the [Releases](https://github.com/SecuredNodeDynamics/Homedash/releases) page: `.exe` for Windows, `.deb` for Ubuntu or `.apk` for Android. Launch it, enter your host address and sign in.
+
+### Step 7: Add other users (optional)
+
+Open **Settings → General → Access control** to create accounts. Give people only the permissions they need. See [Users, Groups and Permissions](#9-users-groups-and-permissions).
+
+### You're done. Where next?
+
+| I want to... | Go to |
+|---|---|
+| Understand the interface | [Finding Your Way Around](#3-finding-your-way-around) |
+| Set up a specific widget | [Built-in Widget Reference](#5-built-in-widget-reference) |
+| Change layouts or hide widgets on a phone | [Customizing Your Layout](#6-customizing-your-layout) |
+| Update HomeDash or free up disk space | [Maintenance](#10-maintenance-updates-cleanup-and-backups) |
+| Fix something | [Troubleshooting](#13-troubleshooting) |
 
 ---
 

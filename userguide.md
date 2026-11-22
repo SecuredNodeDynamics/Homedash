@@ -276,8 +276,17 @@ Authentication to the admin area uses your Vaultwarden admin token.
 
 ### AI
 
-#### Gemini chat
-A chat panel powered by Google Gemini. Add your Gemini API key in Settings → Widgets.
+#### AI Chat
+A chat panel for talking to AI assistants from your dashboard. You can configure any of these agents:
+
+| Agent | Provider |
+|---|---|
+| **Gemini** | Google |
+| **Claude** | Anthropic |
+| **ChatGPT** | OpenAI |
+| **Perplexity** | Perplexity AI |
+
+To set it up, open **Settings → Widgets**, enable the AI Chat widget, and add the API key for each agent you want to use. You only need to configure the ones you plan to use.
 
 ---
 

@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img alt="Version" src="https://img.shields.io/badge/version-0.4.x-7b2fe0" />
+  <img alt="Version" src="https://img.shields.io/badge/version-0.5.x-7b2fe0" />
   <img alt="Proxmox" src="https://img.shields.io/badge/Proxmox-LXC-e57000?logo=proxmox&logoColor=white" />
   <img alt="Docker" src="https://img.shields.io/badge/docker-compose-1a2fd6?logo=docker&logoColor=white" />
   <img alt="Windows" src="https://img.shields.io/badge/Windows-.exe-0078d4?logo=windows&logoColor=white" />
@@ -47,7 +47,7 @@ HomeDash has two parts:
 
 You install **one host**, then as many **controller apps** as you like. The dashboard is also reachable from any modern browser.
 
-📖 **New to HomeDash?** Read the full [User Guide](userguide.md).
+📖 **New to HomeDash?** Start with the [Quick Start](userguide.md#quick-start), or read the full [User Guide](userguide.md).
 
 ## Installation
 
@@ -75,7 +75,7 @@ Download the controller for your device from the [Releases](../../releases) page
 | Platform | Package | Notes |
 |---|---|---|
 | **Windows** | `.exe` installer | Installs the app controller (`JMG - HomeDash`) |
-| **Linux (Ubuntu)** | `.deb` package | Install with `sudo apt install ./homedash-controller_<version>_amd64.deb` <!-- TODO: confirm filename --> |
+| **Linux (Ubuntu)** | `.deb` package | Install with `sudo apt install ./HomeDash-Controller-<version>-amd64.deb` |
 | **Android** | `.apk` | Enable "install unknown apps" for your browser or file manager, then open the file |
 
 On first launch, enter your HomeDash host address and sign in.
@@ -123,7 +123,7 @@ Widgets are installed and updated through the built-in **Widget Manager**. Curre
 | **Media & Arr** | Radarr, Sonarr, Prowlarr, Jellyfin Slider, qBittorrent |
 | **Security** | Vaultwarden |
 | **Everyday** | Clock, Weather, Crypto prices, Bookmarks |
-| **AI** | Gemini chat panel |
+| **AI** | AI Chat (Gemini, Claude, ChatGPT, Perplexity) |
 
 ### Administration
 - **Users & groups** with server-enforced permissions: view dashboard, view/change settings, edit layouts, manage widgets, control widget services, use widget terminals, create personal dashboards, backups, and user management
@@ -131,7 +131,7 @@ Widgets are installed and updated through the built-in **Widget Manager**. Curre
 - **Widget Manager:** install, update and repair widget packages with live log streaming
 - **System updates:** apply dashboard updates (`.hdupdate` packages) from the UI
 - **Cleanup tool:** one click prunes Docker build cache, images and volumes, cleans apt and vacuums journal logs, with an optional **recurring schedule**
-- **Backup, export & restore**
+- **Config backup & restore** from Settings → Admin
 - **Cloudflare tunnel awareness:** optionally redirect local-IP visits to your configured tunnel
 
 <p align="center">

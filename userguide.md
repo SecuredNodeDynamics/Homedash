@@ -57,9 +57,10 @@ There is no preset password. After that, open `http://SERVER_IP:3080` (use your 
 
 A fresh dashboard starts with **Clock, Weather, Notes, Todo, Grocery List and Bookmarks**. To add more:
 
-1. Open **Settings → Widget Manager**.
-2. Click **Install** on each widget you want and wait for the log to finish.
-3. Open **Settings → Widgets**, enable each widget, and enter its URL and API key or login.
+1. Download the `.hdwidget` package for each widget you want from the [HomeDash GitHub repo](https://github.com/SecuredNodeDynamics/Homedash), where widgets are published as widget releases.
+2. Open **Settings → Widget Manager**, click **Upload package**, then **Choose widget packages** and select the file.
+3. Click **Verify & install** and wait for the log to finish.
+4. Open **Settings → Widgets**, enable each widget, and enter its URL and API key or login.
 
 ### Step 4: Arrange your dashboard
 
@@ -141,7 +142,7 @@ To change your password later:
 
 1. **Name it.** Settings → General → Application name.
 2. **Brand it.** Upload your logo and favicon under **Brand assets**.
-3. **Install widgets.** Settings → Widget Manager → click **Install** on the services you run (see [Section 8](#8-installing-and-updating-widgets)).
+3. **Install widgets.** Download the `.hdwidget` package, then Settings → Widget Manager → **Upload package** → **Verify & install** (see [Section 8](#8-installing-and-updating-widgets)).
 4. **Configure widgets.** Settings → Widgets → enable each widget and enter its URL and credentials.
 5. **Arrange the dashboard.** Use Edit Layout mode ([Section 6](#6-customizing-your-layout)).
 
@@ -386,7 +387,7 @@ Create, rename, reorder and delete tabs, and choose which widgets live on each.
 Turn installed widgets on or off, and enter each one's connection details (URL, API key, token or login). Also where per-widget access is controlled.
 
 ### 7.7 Widget Manager: install, update and repair
-Install new widgets and update existing ones. See [Section 8](#8-installing-and-updating-widgets).
+Install new widgets and update existing ones by uploading `.hdwidget` packages. See [Section 8](#8-installing-and-updating-widgets).
 
 ### 7.8 System: dashboard updates
 Apply updates to HomeDash itself. See [Section 10](#10-maintenance-updates-cleanup-and-backups).
@@ -402,22 +403,31 @@ The **Config backup & restore** card, plus the **Cleanup** card with its schedul
   <img src="screenshots/homedash.settings.widgetmanager.png" alt="HomeDash Widget Manager" width="100%" />
 </p>
 
+### Get the widget package
+
+Widgets are published as `.hdwidget` packages in the [HomeDash GitHub repo](https://github.com/SecuredNodeDynamics/Homedash), as widget releases. Download the package for the widget you want. The same download is used for a first install and for an update.
+
 ### Install a widget
 
 1. Sign in as an admin and open **Settings → Widget Manager**.
-2. Find the widget you want in the list.
-3. Click **Install**.
-4. Watch the live log. HomeDash installs the package and rebuilds the app. This can take a minute or two.
-5. When it finishes, go to **Settings → Widgets**, enable the widget and enter its connection details.
-6. Add it to a tab.
+2. Click **Upload package**.
+3. Click **Choose widget packages** and locate the `.hdwidget` file you downloaded.
+4. Once the package is uploaded, click **Verify & install**.
+5. Watch the live log. HomeDash checks the package, installs it and rebuilds the app. This can take a minute or two.
+6. When it finishes, go to **Settings → Widgets**, enable the widget and enter its connection details.
+7. Add it to a tab.
+
+<p align="center">
+  <img src="screenshots/homedash.widgetupdate.png" alt="HomeDash widget package installer" width="100%" />
+</p>
 
 ### Update a widget
 
-New and updated widgets are published as `.hdwidget` packages on the [HomeDash GitHub repo](https://github.com/SecuredNodeDynamics/Homedash). When a newer version is available, click **Install** on that widget in the Widget Manager, the same way you installed it.
+When a newer version of a widget is published, download the new `.hdwidget` package from the repo and install it the same way: **Settings → Widget Manager → Upload package → Choose widget packages → Verify & install**.
 
 ### Repair a widget
 
-If a widget behaves oddly after an update, use the Widget Manager's repair option (or reinstall it) to restore its files.
+If a widget behaves oddly after an update, upload its package again and click **Verify & install** to restore its files.
 
 ### Good to know
 
@@ -569,7 +579,7 @@ Download the newer installer from Releases and install it over the top. Your set
 | **Can't reach the dashboard** | Confirm the host is running (LXC started, or `docker compose ps`), check the address and port, and check that no firewall is blocking it. |
 | **Login fails** | Check the username and password. An admin can reset a user's password with **PW Reset**. |
 | **Widget shows no data** | Open Settings → Widgets and re-check the service URL and API key. Confirm the dashboard host can reach that service on your network. |
-| **Widget install fails** | Open the log in the Widget Manager and read the last lines. Make sure no other install or update is running, then try again. |
+| **Widget install fails** | Open the log in the Widget Manager and read the last lines. Make sure no other install or update is running, then try again. If **Verify & install** reports a problem with the package, download it again, since the file may be incomplete. |
 | **A widget I installed doesn't appear** | Enable it in Settings → Widgets, then place it on a tab. |
 | **Widgets reset to a different size** | Make sure you are on the latest dashboard version, since earlier versions had a bug that reset resized card widths on save. Update from Settings → System. |
 | **Log panel doesn't follow new output** | Update to the latest dashboard version. Logs auto-follow new output once a new job starts. |

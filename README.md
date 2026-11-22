@@ -82,18 +82,21 @@ On first launch, enter your HomeDash host address and sign in.
 
 ## Installing Widgets
 
-Widgets are managed from inside the dashboard, so you never need to touch the host's command line.
+Widgets are managed from inside the dashboard, so you never need to touch the host's command line. They are published as `.hdwidget` packages in this repo, as widget releases.
 
-1. Sign in as an admin and open **Settings → Widget Manager**.
-2. Find the widget you want in the list.
-3. Click **Install**. A live log shows the install and rebuild as it runs.
-4. When it finishes, enable the widget under **Settings → Widgets**, enter its credentials (URL, API key, etc.), then add it to a tab from **Settings → Tabs** or Edit Layout mode.
+1. Download the `.hdwidget` package for the widget you want from this GitHub repo.
+2. Sign in as an admin and open **Settings → Widget Manager**.
+3. Click **Upload package**, then **Choose widget packages** and locate the file you downloaded.
+4. Click **Verify & install**. A live log shows the install and rebuild as it runs.
+5. When it finishes, enable the widget under **Settings → Widgets**, enter its credentials (URL, API key, etc.), then add it to a tab from **Settings → Tabs** or Edit Layout mode.
 
-New and updated widgets are published as `.hdwidget` packages on this GitHub repo. When a new version is available, it shows up in the Widget Manager and you can update it the same way, with the **Install** button.
-
-<!-- TODO: confirm how the Widget Manager finds new packages (auto-listed from GitHub vs. manual .hdwidget upload) and adjust the paragraph above if needed -->
+Updating works the same way: download the newer package and upload it again.
 
 > Only the **Admin** account can install widgets, and widgets in sensitive categories (Security, Credentials, Networking) are admin-only by default.
+
+<p align="center">
+  <img src="screenshots/homedash.widgetupdate.png" alt="HomeDash widget package installer" width="100%" />
+</p>
 
 <p align="center">
   <img src="screenshots/homedash.settings.widgetmanager.png" alt="HomeDash Widget Manager" width="100%" />
@@ -141,7 +144,7 @@ Widgets are installed and updated through the built-in **Widget Manager**. Curre
 ## Updating
 
 - **Host:** from **Settings → System**, upload a `.hdupdate` package and watch the log stream live. Proxmox users can alternatively re-run the update bundle against the existing LXC (see the [Proxmox install guide](HomeDash%20installers/Proxmox/PVE-INSTALL-README.md)).
-- **Widgets:** from **Settings → Widget Manager**, click **Install** on any widget with a newer version. Updated `.hdwidget` packages are published on this GitHub repo as they become available. See [Installing Widgets](#installing-widgets).
+- **Widgets:** download the newer `.hdwidget` package from this GitHub repo, then in **Settings → Widget Manager** click **Upload package**, choose the file and click **Verify & install**. See [Installing Widgets](#installing-widgets).
 - **Controller apps:** download the newer installer from [Releases](../../releases) and install over the top.
 
 ## Building a Widget

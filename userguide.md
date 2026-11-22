@@ -557,6 +557,9 @@ Controller apps give you HomeDash as a dedicated app on your devices, with no br
 <p align="center">
   <img src="screenshots/homedash.controller.png" alt="HomeDash controller app: connect to server page" width="60%" />
 </p>
+<p align="center">
+  <img src="screenshots/homedash.controller.android.png" alt="HomeDash controller android app: connect to server page" width="40%" />
+</p>
 
 ### Updating a controller app
 Download the newer installer from Releases and install it over the top. Your settings and layouts live on the host, so nothing is lost.

@@ -555,10 +555,8 @@ Controller apps give you HomeDash as a dedicated app on your devices, with no br
 3. Launch the app, enter your HomeDash host address on the **connect to server** page, and sign in.
 
 <p align="center">
-  <img src="screenshots/homedash.controller.png" alt="HomeDash controller app: connect to server page" width="60%" />
-</p>
-<p align="center">
-  <img src="screenshots/homedash.controller.android.png" alt="HomeDash controller android app: connect to server page" width="40%" />
+  <img src="screenshots/homedash.controller.png" alt="HomeDash controller app: connect to server page" height="320" />
+  <img src="screenshots/homedash.controller.android.jpg" alt="HomeDash Android controller app: connect to server page" height="320" />
 </p>
 
 ### Updating a controller app

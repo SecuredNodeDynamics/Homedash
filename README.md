@@ -86,7 +86,7 @@ Widgets are managed from inside the dashboard, so you never need to touch the ho
 
 1. Download the `.hdwidget` package for the widget you want from this GitHub repo.
 2. Sign in as an admin and open **Settings → Widget Manager**.
-3. Click **Upload package**, then **Choose widget packages** and locate the file you downloaded.
+3. Click **Upload package**, then **Choose widget packages** and locate the file you downloaded. You can upload up to 10 packages at a time.
 4. Click **Verify & install**. A live log shows the install and rebuild as it runs.
 5. When it finishes, enable the widget under **Settings → Widgets**, enter its credentials (URL, API key, etc.), then add it to a tab from **Settings → Tabs** or Edit Layout mode.
 

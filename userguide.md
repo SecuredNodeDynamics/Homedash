@@ -58,7 +58,7 @@ There is no preset password. After that, open `http://SERVER_IP:3080` (use your 
 A fresh dashboard starts with **Clock, Weather, Notes, Todo, Grocery List and Bookmarks**. To add more:
 
 1. Download the `.hdwidget` package for each widget you want from the [HomeDash GitHub repo](https://github.com/SecuredNodeDynamics/Homedash), where widgets are published as widget releases.
-2. Open **Settings → Widget Manager**, click **Upload package**, then **Choose widget packages** and select the file.
+2. Open **Settings → Widget Manager**, click **Upload package**, then **Choose widget packages** and select your files (up to 10 at a time).
 3. Click **Verify & install** and wait for the log to finish.
 4. Open **Settings → Widgets**, enable each widget, and enter its URL and API key or login.
 
@@ -411,7 +411,7 @@ Widgets are published as `.hdwidget` packages in the [HomeDash GitHub repo](http
 
 1. Sign in as an admin and open **Settings → Widget Manager**.
 2. Click **Upload package**.
-3. Click **Choose widget packages** and locate the `.hdwidget` file you downloaded.
+3. Click **Choose widget packages** and locate the `.hdwidget` file you downloaded. To install several widgets at once, select up to 10 packages.
 4. Once the package is uploaded, click **Verify & install**.
 5. Watch the live log. HomeDash checks the package, installs it and rebuilds the app. This can take a minute or two.
 6. When it finishes, go to **Settings → Widgets**, enable the widget and enter its connection details.
@@ -431,6 +431,7 @@ If a widget behaves oddly after an update, upload its package again and click **
 
 ### Good to know
 
+- **You can upload up to 10 widget packages at a time.** Select several `.hdwidget` files in **Choose widget packages**, then click **Verify & install** once. This is handy for setting up a new dashboard or updating several widgets together.
 - Installs and updates run as a single job at a time. If one is already running, wait for it to finish.
 - The install log scrolls automatically as output streams in. If you scroll up to read earlier lines, it resumes following new output when you start the next job.
 - Installing one widget never overwrites shared files used by other widgets, so installing Radarr, Sonarr and Prowlarr in any order is safe.

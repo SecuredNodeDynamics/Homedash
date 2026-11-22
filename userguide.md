@@ -358,8 +358,8 @@ Install new widgets and update existing ones. See [Section 8](#8-installing-and-
 ### 7.8 System: dashboard updates
 Apply updates to HomeDash itself. See [Section 10](#10-maintenance-updates-cleanup-and-backups).
 
-### 7.9 Admin: backup, export and restore
-Backups, plus the **Cleanup** card with its schedule. See [Section 10](#10-maintenance-updates-cleanup-and-backups).
+### 7.9 Admin: config backup & restore and cleanup
+The **Config backup & restore** card, plus the **Cleanup** card with its schedule. See [Section 10](#10-maintenance-updates-cleanup-and-backups).
 
 ---
 
@@ -447,10 +447,13 @@ Groups let you apply the same permissions to several users.
 
 HomeDash updates are delivered as `.hdupdate` packages.
 
-1. Open **Settings → System**.
-2. Upload the update package.
-3. Start the update and watch the live log.
-4. When it finishes, reload the page.
+1. **Back up your configuration first (recommended).** Open **Settings → Admin** and use the **Config backup & restore** card to save your settings, tabs, layouts and widget config. See [10.3](#103-config-backup--restore-settings--admin).
+2. Open **Settings → System**.
+3. Upload the update package.
+4. Start the update and watch the live log.
+5. When it finishes, reload the page.
+
+> Updates keep your settings, but a fresh backup takes seconds and lets you roll back if anything goes wrong.
 
 Proxmox users can alternatively run the update bundle against the existing LXC container (see the [Proxmox install guide](HomeDash%20installers/Proxmox/PVE-INSTALL-README.md)).
 
@@ -480,9 +483,11 @@ Open the **Schedule** tab in the Cleanup card.
 
 A scheduled cleanup is skipped if an install or update, or another job, is already running at that moment.
 
-### 10.3 Backup, export and restore (Settings → Admin)
+### 10.3 Config backup & restore (Settings → Admin)
 
-Use the Admin section to back up your HomeDash configuration (settings, tabs, layouts and widget config), export it, and restore it later or on a new host. Take a backup before major updates.
+Use the **Config backup & restore** card in **Settings → Admin** to back up your HomeDash configuration (settings, tabs, layouts and widget config), and to restore it later or on a new host.
+
+**Take a config backup before every `.hdupdate` update** and before major changes such as removing widgets or reorganizing users.
 
 ---
 
@@ -542,7 +547,7 @@ Download the newer installer from Releases and install it over the top. Your set
 | **UK-Monitor popup is not near the row I clicked** | Update the UK-Monitor widget to the latest version. |
 | **Redirected to the Cloudflare address unexpectedly** | Turn off **Redirect local IP to Cloudflare** in Settings → General → Local dashboard access. |
 | **Disk is filling up** | Run **Cleanup** (Settings → Admin) and consider scheduling it weekly. |
-| **Something broke after an update** | Restore from the backup you took before updating, then report the issue on GitHub. |
+| **Something broke after an update** | Restore the config backup you took before updating (Settings → Admin → Config backup & restore), then report the issue on GitHub. |
 
 Still stuck? Ask in **#support** on the [HomeDash Discord](https://discord.gg/7xp7ZZu7f), or [open an issue](https://github.com/SecuredNodeDynamics/Homedash/issues) and include your HomeDash version, which host type you use (Proxmox or Docker), and the relevant log output.
 
